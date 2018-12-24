@@ -1,0 +1,11 @@
+{
+  "name": "vuetinymce",
+  "version": "1.0.0",
+  "description": "富文本编辑器 tinymce vue 组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "weichaozhan",
+  "license": "ISC"
+}
