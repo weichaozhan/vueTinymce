@@ -1,7 +1,14 @@
-import VueTinymce from './Index.vue';
+// import VueTinymce from './Index.vue';
 
-VueTinymce.install = (Vue) => {
-  Vue.component('VueTinymce', VueTinymce);
-};
+// VueTinymce.install = (Vue) => {
+//   Vue.component('VueTinymce', VueTinymce);
+// };
 
-export default VueTinymce;
+// if(typeof window !== 'undefined' && window.Vue){
+//   window.Vue.use(VueTinymce);
+// }
+
+// export default VueTinymce;
+export default {
+  s: 'sdfsfs'
+}

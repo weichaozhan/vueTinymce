@@ -1,24 +1,26 @@
 <!-- 富文本编辑器 基于 TinyMCE -->
 <template>
-    <div v-loading="loading" :class="`mt30 ${loading ? 'loading' : ''}`">
+    <div :class="`mt30 ${loading ? 'loading' : ''}`">
         <div :id="`ueditor${_uid}`" name="content" type="text/plain">
         </div>
     </div>
 </template>
 
 <script>
+// import tinymce from 'tinymce';
 import 'tinymce/tinymce.min.js';
 import './zh_CN.js';
 import 'tinymce/themes/modern/theme.js';
 
 // plugins
-import './plugins';
+import './plugins.js';
 
 // 加载样式
 import 'tinymce/skins/lightgray/content.min.css';
-import 'tinymce/skins/lightgray/skin.mobile.min.css';
+import 'tinymce/skins/lightgray/skin.min.css';
+import 'tinymce/plugins/codesample/css/prism.css';
 
-const PLUGINS = ['paste', 'link', 'media', 'preview', 'image', 'imagetools', 'fullpage', 'fullscreen', 'emoticons', 'advlist', 'anchor', 'autolink', 'colorpicker', 'compat3x', 'contextmenu', 'directionality', 'hr', 'lists', 'table', 'insertdatetime', 'codesample', 'textcolor', 'searchreplace', 'pagebreak'];
+const PLUGINS = ['paste', 'link', 'media', 'preview', 'image', 'imagetools', 'fullpage', 'fullscreen', 'emoticons', 'advlist', 'anchor', 'autolink', 'colorpicker', 'contextmenu', 'directionality', 'hr', 'lists', 'table', 'insertdatetime', 'codesample', 'textcolor', 'searchreplace', 'pagebreak'];
 
 export default {
     name:'',

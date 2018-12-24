@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         Vue
+        <!-- <vue-tinymce v-model="a"></vue-tinymce> -->
     </div>
 </template>
 
@@ -9,7 +10,7 @@ export default {
     name:'App',
     data() {
         return {
-
+            a: ''
         };
     },
 };
