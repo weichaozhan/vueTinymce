@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         Vue
-        <!-- <vue-tinymce v-model="a"></vue-tinymce> -->
+        <vue-tinymce v-model="a"></vue-tinymce>
     </div>
 </template>
 

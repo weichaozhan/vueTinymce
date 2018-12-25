@@ -1,5 +1,5 @@
 {
-  "name": "vuetinymce",
+  "name": "w-vue-tinymce-editor",
   "version": "0.1.1",
   "description": "富文本编辑器 tinymce vue 组件",
   "main": "index.js",
@@ -8,6 +8,7 @@
     "dev": "cross-env NODE_ENV=development node server.js",
     "build": "cross-env NODE_ENV=production node_modules/.bin/webpack --config ./webpack.config.js"
   },
+  "keywords": ["vue-tinymce-editor"],
   "author": "weichaozhan",
   "license": "ISC",
   "dependencies": {

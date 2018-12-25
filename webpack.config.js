@@ -5,7 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const copyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
-    entry: './src/main.js',
+    entry: './demo/main.js',
     mode: process.env.NODE_ENV,
     module: {
         rules: [
@@ -16,11 +16,11 @@ const config = {
                     loader: 'babel-loader',
                     options: {
                         presets: [
-                            'babel-preset-es2015',
-                            'babel-preset-stage-3',
+                            // 'es2015',
+                            // 'stage-3',
                         ],
                         plugins: [
-                            'babel-plugin-transform-es2015-modules-umd'
+                            'transform-es2015-modules-umd'
                         ]
                     }
                 }
@@ -54,7 +54,7 @@ const config = {
 };
 
 if (process.env.NODE_ENV === 'production') {
-    config.entry = './src/vueTinymce/index.js',
+    config.entry = './src/index.js',
     config.output = {
         path: path.resolve(__dirname, 'dist'),
         filename: './vue-tinymce.js',

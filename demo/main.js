@@ -1,10 +1,9 @@
 import Vue from 'vue';
 
 import App from './App.vue';
-import VueTinymce from '../dist/vue-tinymce';
+import VueTinymce from '../src/index';
 
-// Vue.use(VueTinymce);
-console.log(VueTinymce)
+Vue.use(VueTinymce);
 
 new Vue({
     render: h => h(App)
